@@ -1,0 +1,39 @@
+/* Barra de Navegación */
+
+.navbar {
+  background-color: black;
+  padding: 24px 40px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+}
+
+.navbar ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s;
+  font-weight: bold;
+}
+
+.icons i {
+  color: white;
+  font-size: 1.3rem;
+  margin-left: 20px;
+  cursor: pointer;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  gap: 30px;
+}
+
+.nav-links li a:hover {
+  color: blueviolet;
+}

@@ -1,0 +1,78 @@
+/* Sección Hero (Cabecera principal) */
+.hero {
+  background-image: url('../IMG/desarrollo.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  position: relative;
+  filter: brightness(0.7) contrast(1.2);
+}
+
+.overlay {
+  background-color: rgba(0, 0, 0, 0.5);
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding-left: 10%;
+  padding-right: 10%;
+  justify-content: space-between;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.content {
+  color: white;
+  max-width: 600px;
+}
+
+.content h1 {
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+
+.content span {
+  font-weight: bold;
+}
+
+.braces {
+  bottom: 15px;
+  color: blueviolet;
+}
+
+.content p {
+  margin-top: 10px;
+  font-size: 1.2rem;
+}
+
+.container-img-perfil > img {
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0 0 20px rgba(37, 37, 37, 0.2);
+  transition: transform 0.3s ease;
+}
+
+
+/* Responsive para móviles */
+@media (max-width: 768px) {
+  .overlay {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    text-align: center;
+  }
+
+  .content h1 {
+    font-size: 2rem;
+  }
+
+  .content p {
+    font-size: 1rem;
+  }
+
+  .container-img-perfil > img {
+    width: 140px;
+    height: 140px;
+  }
+}

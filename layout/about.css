@@ -1,0 +1,180 @@
+.about-section {
+  background-color: #0d0d0d;
+  color: #ffffff;
+  padding: 80px 10% 80px;
+  font-family: 'Inter', sans-serif;
+}
+
+
+.section-title {
+  font-size: 42px;
+  font-weight: bold;
+  margin-bottom: 60px;
+  position: relative;
+  padding-left: 20px;
+  font-family: 'Fira Code', monospace;
+  color: #eaeaea;
+}
+
+.section-title::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 10px;
+  width: 6px;
+  height: 30px;
+  background: linear-gradient(to bottom, #555, #222);
+  border-radius: 4px;
+}
+
+.about-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto;
+  gap: 40px;
+}
+
+.about-card {
+  background-color: #1a1a1a;
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 0 12px rgba(255, 255, 255, 0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border: 1px solid #333;
+}
+
+.about-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 0 25px rgba(255, 255, 255, 0.15);
+}
+
+.about-card h3 {
+  font-size: 24px;
+  margin-bottom: 16px;
+  color: #e0e0e0;
+}
+
+.about-card p,
+.about-card li {
+  font-size: 16px;
+  line-height: 1.7;
+  color: #c7c7c7;
+  margin-bottom: 12px;
+  list-style: none;
+}
+
+.about-card strong {
+  color: #ffffff;
+}
+
+.highlight {
+  color: #f0f0f0;
+  background: #333;
+  padding: 2px 6px;
+  border-radius: 6px;
+}
+
+.about-card.experiencia,
+.about-card:last-child {
+  grid-column: span 2;
+}
+
+@media (max-width: 1024px) {
+  .about-section {
+    padding: 80px 6% 60px;
+  }
+
+  .section-title {
+    font-size: 36px;
+    margin-bottom: 50px;
+  }
+
+  .about-card h3 {
+    font-size: 22px;
+  }
+
+  .about-card p,
+  .about-card li {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 768px) {
+  .about-section {
+    padding: 70px 5% 50px;
+  }
+
+  .section-title {
+    font-size: 30px;
+    margin-bottom: 40px;
+  }
+
+  .about-content {
+    grid-template-columns: 1fr;
+  }
+
+  .about-card.experiencia,
+  .about-card:last-child {
+    grid-column: span 1;
+  }
+
+  .about-card {
+    padding: 20px;
+  }
+
+  .about-card h3 {
+    font-size: 20px;
+  }
+
+  .about-card p,
+  .about-card li {
+    font-size: 14.5px;
+  }
+}
+
+@media (max-width: 480px) {
+  .about-section {
+    padding: 60px 4% 40px;
+  }
+
+  .section-title {
+    font-size: 26px;
+    padding-left: 16px;
+  }
+
+  .section-title::before {
+    top: 8px;
+    height: 24px;
+  }
+
+  .about-content {
+    gap: 30px;
+  }
+
+  .about-card {
+    padding: 16px;
+    border-radius: 16px;
+  }
+
+  .about-card h3 {
+    font-size: 18px;
+    margin-bottom: 12px;
+  }
+
+  .about-card p,
+  .about-card li {
+    font-size: 14px;
+    line-height: 1.6;
+  }
+}
+
+@media (max-width: 360px) {
+  .section-title {
+    font-size: 24px;
+  }
+  
+  .about-section {
+    padding: 50px 3% 30px;
+  }
+}
+
