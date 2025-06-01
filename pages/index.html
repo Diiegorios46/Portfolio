@@ -38,8 +38,7 @@
     <div class="overlay">
       <div class="content">
         <h1>I am Diego Rios <span class="braces">{}</span></h1>
-        <p>I passionate the development web</p>
-        <p>Trainee Web Developer</p>
+        <p>Full Stack Developer</p>
       </div>
       <div class="container-img-perfil">
         <img src="../IMG/perfil.jpg" alt="">
@@ -77,16 +76,8 @@
           <h3>💼 Work Experience</h3>
           <ul>
             <li>
-              <strong>UNCo – Internship</strong><br />
-              Real-world projects focused on accessibility and UX. Redesign of the student portal.
-            </li>
-            <li>
-              <strong>Frontend Freelancer</strong><br />
-              React, Tailwind, responsive design and basic SEO. Client work.
-            </li>
-            <li>
-              <strong>Donation Platform</strong><br />
-              Non-profit app with filters, localStorage, and teamwork collaboration.
+              <strong>INTA (Instituto Nacional de Tecnología Agropecuaria)</strong><br />
+              6 months working on a react project 
             </li>
           </ul>
         </div>
@@ -94,16 +85,28 @@
         <!-- Card: Skills -->
         <div class="about-card">
           <h3>🛠 Skills</h3>
-          <div class="tech-icons" style="font-size: 1.6rem;">
+          <div class="tech-icons">
+            <h4>Backend</h4>
             <span title="PHP"><i class="fab fa-php"></i> PHP</span> &nbsp;&nbsp;
+            <span title="SQL"><i class="fas fa-database"></i> SQL</span> &nbsp;&nbsp;
+            <span title="Laravel">
+              <img src="https://laravel.com/img/logomark.min.svg" alt="Laravel" style="height:1.2em;vertical-align:middle;">
+              Laravel
+            </span>          
+          </div>
+                    
+          <div class="tech-icons">
+            <h4>Frontend</h4>
             <span title="HTML5"><i class="fab fa-html5"></i> HTML5</span> &nbsp;&nbsp;
             <span title="CSS3"><i class="fab fa-css3-alt"></i> CSS3</span> &nbsp;&nbsp;
             <span title="JavaScript"><i class="fab fa-js-square"></i> JavaScript</span> &nbsp;&nbsp;
             <span title="Bootstrap"><i class="fab fa-bootstrap"></i> Bootstrap</span> &nbsp;&nbsp;
-            <span title="SQL"><i class="fas fa-database"></i> SQL</span> &nbsp;&nbsp;
             <span title="React"><i class="fab fa-react"></i> React</span> &nbsp;&nbsp;
             <span title="Tailwind"><i class="fas fa-water"></i> Tailwind</span> &nbsp;&nbsp;
             <span title="Sass"><i class="fab fa-sass"></i> Sass</span>
+
+          </div>
+
           </div>
         </div>
       </div>
@@ -115,7 +118,8 @@
       <h2 class="section-title">&lt;/ My Projects &gt;</h2>
 
       <div class="project-grid">
-        <div class="project zapatillas">
+
+        <div class="project zapatillas" data-link="https://github.com/Diiegorios46/TP-Final-TiendaZapatillas-Prog.Dinamica">
           <img src="../IMG/zapatillas.web.png" alt="Ecommerce Project" />
           <div class="project-content">
             <h3>E-commerce sneakers</h3>
@@ -131,21 +135,24 @@
           </div>
         </div>
 
-        <div class="project">
+        <div class="project" data-link="https://react-movie-series-pwa-woad.vercel.app/">
           <img src="../IMG/movies.png" alt="ReelVices Project" />
           <div class="project-content">
-            <h3>E-commerce Site</h3>
-            <p class="project-description">Plataforma de comercio electrónico completa con carrito de compras, autenticación de usuarios y panel de administración.</p>
+            <h3>film manager</h3>
+            <p class="project-description">
+              Progressive web application (PWA) developed with React to explore movies and series in a dynamic, interactive and fully responsive way.
+            </p>
             <div class="tech-icons">
               <i class="fab fa-php" title="PHP"></i>
               <i class="fab fa-html5" title="HTML5"></i>
               <i class="fab fa-css3-alt" title="CSS3"></i>
               <i class="fab fa-js-square" title="JavaScript"></i>
+              <i title="React" class="fab fa-react"></i> 
             </div>
           </div>
         </div>
 
-        <div class="project">
+        <div class="project" data-link="https://github.com/Diiegorios46/TP-Final-TiendaCoffee-Prog.Estatica">
           <img src="../IMG/coffe.png" alt="Coffee Project" />
           <div class="project-content">
             <h3>Coffee Shop</h3>
@@ -171,8 +178,8 @@
           </div>
         </div>
 
-      </div> <!-- Cierre de project-grid -->
-    </div> <!-- Cierre de container -->
+      </div> 
+    </div> 
   </section>
 
 
@@ -196,7 +203,7 @@
     document.querySelectorAll('.project').forEach(div => {
       div.addEventListener('click', () => {
         const url = div.getAttribute('data-link');
-        window.open(url, '_blank'); // abre en una nueva pestaña
+        window.open(url, '_blank');
       });
     });
   </script>

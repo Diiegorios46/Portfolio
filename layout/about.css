@@ -1,7 +1,7 @@
 .about-section {
   background-color: #0d0d0d;
   color: #ffffff;
-  padding: 80px 10% 80px;
+  padding: 100px 10% 100px;
   font-family: 'Inter', sans-serif;
 }
 
@@ -32,20 +32,6 @@
   grid-template-columns: 1fr 1fr;
   grid-template-rows: auto;
   gap: 40px;
-}
-
-.about-card {
-  background-color: #1a1a1a;
-  padding: 30px;
-  border-radius: 20px;
-  box-shadow: 0 0 12px rgba(255, 255, 255, 0.05);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  border: 1px solid #333;
-}
-
-.about-card:hover {
-  transform: translateY(-8px);
-  box-shadow: 0 0 25px rgba(255, 255, 255, 0.15);
 }
 
 .about-card h3 {
