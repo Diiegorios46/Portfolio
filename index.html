@@ -15,15 +15,22 @@
 
   <header>
     <nav class="navbar">
+      <div class="hamburger" id="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      
       <ul class="nav-links" id="nav-links">
         <li><a href="#home">Home</a></li>
         <li><a href="#projects">Projects</a></li>
         <li><a href="#about">About</a></li>
+        <li class="mobile-social">
+          <a href="https://www.linkedin.com/in/diego-rios-8112a9264/" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin"></i></a>
+          <a href="https://github.com/Diiegorios46" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i></a>
+        </li>
       </ul>
-      
-      <div class="social-icons">
-        <!-- Optional: add social icons here -->
-      </div>
+    
 
       <div class="icons">
         <a href="https://www.linkedin.com/in/diego-rios-8112a9264/" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin"></i></a>
@@ -34,10 +41,13 @@
     </nav>
   </header>
 
+
+  
+
   <main class="hero" id="home">
     <div class="overlay">
       <div class="content">
-        <h1>I am Diego Rios <span class="braces">{}</span></h1>
+        <h1>I am Diego Ríos <span class="braces">{}</span></h1>
         <p>Full Stack Developer</p>
       </div>
       <div class="container-img-perfil">
@@ -200,12 +210,32 @@
   </footer>
 
     <script>
-    document.querySelectorAll('.project').forEach(div => {
-      div.addEventListener('click', () => {
-        const url = div.getAttribute('data-link');
-        window.open(url, '_blank');
+      document.addEventListener("DOMContentLoaded", () => {
+        const hamburger = document.getElementById('hamburger');
+        const navLinks = document.getElementById('nav-links');
+
+        hamburger.addEventListener('click', () => {
+          hamburger.classList.toggle('active');
+          navLinks.classList.toggle('active');
+        });
+
+        document.querySelectorAll('.nav-links a').forEach(link => {
+          link.addEventListener('click', () => {
+            if (window.innerWidth <= 768) {
+              hamburger.classList.remove('active');
+              navLinks.classList.remove('active');
+            }
+          });
+        });
+
+        document.querySelectorAll('.project').forEach(div => {
+          div.addEventListener('click', () => {
+            const url = div.getAttribute('data-link');
+            window.open(url, '_blank');
+          });
+        });
       });
-    });
+
   </script>
 
 

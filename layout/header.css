@@ -37,3 +37,96 @@
 .nav-links li a:hover {
   color: blueviolet;
 }
+
+
+/* Estilos para el menú hamburguesa */
+.hamburger {
+  display: none;
+  cursor: pointer;
+  padding: 10px;
+  z-index: 1000;
+}
+
+.hamburger span {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px 0;
+  background-color: #fff;
+  transition: all 0.3s ease;
+}
+
+/* Estilos para el menú en móvil */
+@media (max-width: 768px) {
+  .hamburger {
+    display: block;
+  }
+  
+  .nav-links {
+    position: fixed;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100vh;
+    background-color: #1a1a1a;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: left 0.3s ease;
+    z-index: 999;
+    padding-top: 60px;
+  }
+  
+  .nav-links.active {
+    left: 0;
+  }
+  
+  .nav-links li {
+    margin: 15px 0;
+  }
+  
+  .icons {
+    margin-left: auto;
+  }
+  
+  /* Animación para el icono hamburguesa cuando está activo */
+  .hamburger.active span:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+  
+  .hamburger.active span:nth-child(2) {
+    opacity: 0;
+  }
+  
+  .hamburger.active span:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+  }
+}
+
+/* Oculta los íconos sociales del menú hamburguesa en escritorio */
+.mobile-social {
+  display: none;
+}
+
+/* Muestra los íconos sociales solo en móvil dentro del menú */
+@media (max-width: 768px) {
+  .mobile-social {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 30px;
+  }
+  .mobile-social a {
+    font-size: 1.5rem;
+    color: white;
+  }
+  .mobile-social a:hover {
+    color: blueviolet;
+  }
+}
+
+@media (max-width: 768px) {
+  .icons {
+    display: none;
+  }
+}
