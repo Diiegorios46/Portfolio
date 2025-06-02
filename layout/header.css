@@ -1,7 +1,7 @@
 /* Barra de Navegación */
 
 .navbar {
-  background-color: black;
+  background-color: rgb(2, 4, 3);
   padding: 24px 40px;
   display: flex;
   justify-content: space-between;
