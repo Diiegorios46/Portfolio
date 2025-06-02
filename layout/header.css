@@ -108,6 +108,48 @@
   display: none;
 }
 
+/* NAVBAR Y MENÚ PRINCIPAL */
+.navbar {
+  background-color: black;
+  padding: 24px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  gap: 30px;
+}
+
+.nav-links li a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.tech-icons{
+  font-size: 1.6rem;
+  margin-bottom: 16px;
+}
+
+
+.tech-icons i {
+  margin: 5px;
+  font-size: 1.6rem;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.tech-icons i:hover {
+  transform: scale(1.2);
+}
+
+
+
+
 /* Muestra los íconos sociales solo en móvil dentro del menú */
 @media (max-width: 768px) {
   .mobile-social {
