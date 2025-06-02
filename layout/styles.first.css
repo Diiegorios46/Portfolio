@@ -200,3 +200,84 @@ footer p {
       padding: 30px;;
     }
   }
+
+
+/* 🌤️ Modo "oscuro" visualmente claro y moderno */
+body.dark-mode {
+  background: #ffffff; /* Fondo blanco limpio */
+  color: #000000;       /* Texto principal en negro */
+}
+
+/* Secciones principales */
+body.dark-mode .about-section,
+body.dark-mode .projects {
+  background: transparent; 
+  color: #000000;
+}
+
+
+body.dark-mode footer{
+  background: transparent; 
+  background:#7952b3;
+}
+
+body.dark-mode .overlay{
+  background-color:initial;
+}
+
+/* Títulos de sección */
+body.dark-mode .section-title {
+  color: #000000;
+}
+
+/* Navbar con fondo blanco + sombra sutil */
+body.dark-mode .navbar {
+  background-color: #ffffff;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Footer links */
+body.dark-mode .footer-nav > a , .container > p{
+  color: #000000;
+}
+
+/* Tarjetas con efecto glassmorphism */
+body.dark-mode .project,
+body.dark-mode .about-card {
+  background: rgba(255, 255, 255, 0.4); /* más visible en fondo blanco */
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(8px);
+  border-radius: 12px;
+  padding: 1rem;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.1);
+  color: #000000;
+}
+
+/* Asegurar color en títulos de tarjetas */
+body.dark-mode .about-card h3{
+  color: #000000;
+}
+
+body.dark-mode .hamburger{
+  background-color: #7952b3;
+}
+
+
+
+/* Links, íconos y sociales */
+body.dark-mode .nav-links a,
+body.dark-mode .icons i,
+body.dark-mode .social-icons a {
+  color: #7952b3; /* Morado Bootstrap */
+  transition: color 0.3s ease;
+}
+
+/* Hover brillante */
+body.dark-mode .nav-links a:hover,
+body.dark-mode .social-icons a:hover {
+  color: #1e90ff; /* Azul vivo */
+}
+
+body.dark-mode .fa-linkedin{
+  color: #ffffff;
+}

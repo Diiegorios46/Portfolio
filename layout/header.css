@@ -126,7 +126,11 @@
 }
 
 @media (max-width: 768px) {
-  .icons {
+  .icons .fa-linkedin  {
+    display: none;
+  }
+
+  .icons .fa-github  {
     display: none;
   }
 }
