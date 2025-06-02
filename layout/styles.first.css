@@ -221,6 +221,10 @@ body.dark-mode footer{
   background:#7952b3;
 }
 
+body.dark-mode .about-section{
+  background:#7952b3;
+}
+
 body.dark-mode .overlay{
   background-color:initial;
 }
@@ -254,14 +258,18 @@ body.dark-mode .about-card {
 }
 
 /* Asegurar color en títulos de tarjetas */
-body.dark-mode .about-card h3{
-  color: #000000;
-}
 
 body.dark-mode .hamburger{
   background-color: #7952b3;
 }
 
+body.dark-mode .about-card{
+  color: #ffffff;
+}
+
+body.dark-mode .about-card > p{
+  color: #ffffff;
+}
 
 
 /* Links, íconos y sociales */
