@@ -130,14 +130,25 @@
 
 /* Íconos tecnológicos */
 .tech-icons {
-  font-size: 1.6rem;
-  margin-bottom: 16px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  font-size: 1.5rem; /* tamaño base de iconos + texto */
+  transition: font-size 0.3s ease;
+  margin-bottom: 10px;
+  margin-left: 10px;
 }
 
-.tech-icons i {
+.tech-icons i,
+.tech-icons span > img  {
   margin: 5px;
   font-size: 1.6rem;
   transition: transform 0.3s ease, color 0.3s ease;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  white-space: nowrap;
+  justify-content:start;
 }
 
 .tech-icons i:hover {
