@@ -6,6 +6,7 @@
   <title>Diego Rios - Portfolio</title>
   <link rel="icon" type="image/png" href="./IMG/perfil.jpg">
 
+  <!-- Styles -->
   <link rel="stylesheet" href="../layout/styles.first.css" />
   <link rel="stylesheet" href="../layout/header.css" />
   <link rel="stylesheet" href="../layout/hero.css" />
@@ -14,6 +15,13 @@
   <link rel="stylesheet" href="../layout/footer.css" />
   <link rel="stylesheet" href="../layout/darkMode.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+  <!-- Javascript -->
+   <script src="./javascript/moon.js"></script>
+   <script src="./javascript/traductor.js"></script>
+   <script src="./javascript/burger.js"></script>
+   <script src="./javascript/links.js"></script>
+
 </head>
 <body>
 
@@ -26,9 +34,9 @@
       </div>
       
       <ul class="nav-links" id="nav-links">
-        <li><a href="#home">Home</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#about">About</a></li>
+        <li><a href="#home" data-en="Home" data-es="Inicio">Home</a></li>
+        <li><a href="#projects" data-en="Projects" data-es="Proyectos">Projects</a></li>
+        <li><a href="#about" data-en="About" data-es="Sobre mí" >About</a></li>
         <li class="mobile-social">
           <a href="https://www.linkedin.com/in/diego-rios-8112a9264/" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin"></i></a>
           <a href="https://github.com/Diiegorios46" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i></a>
@@ -49,210 +57,180 @@
   
 
   <main class="hero" id="home">
-    <div class="overlay">
-      <div class="content">
-        <h1>I am Diego Ríos <span class="braces">{}</span></h1>
-        <p>Full Stack Developer</p>
+  <div class="overlay">
+    <div class="content">
+      <h1 id="hero-title" data-en="I am Diego Ríos" data-es="Soy Diego Rios">I am Diego Ríos <span class="braces">{}</span></h1>
+      <p id="hero-subtitle" data-en="Full Stack Developer" data-es="Desarrollador Full Stack">Full Stack Developer</p>
+    </div>
+    <div class="container-img-perfil">
+      <img src="../IMG/perfil.jpg" alt="">
+    </div>
+  </div>
+</main>
+
+<section id="about" class="about-section">
+  <div class="about-container">
+    <h2 class="section-title">&lt;/ <span id="about-section-title" data-en="About Me" data-es="Sobre mi">About Me</span> &gt;</h2>
+
+    <div class="about-content">
+      <!-- Card: Info -->
+      <div class="about-card">
+        <h3>👨‍💻 <span class="highlight">Diego Ríos</span></h3>
+        <p id="about-description" data-en="I am a passionate Junior Web Developer eager to create clean, user-friendly websites that deliver great experiences. Skilled in React, JavaScript, and responsive design, with a strong focus on accessibility and performance. Always learning, proactive, and ready to contribute to innovative projects and grow within a dynamic team.
+" data-es="Soy un desarrollador web junior apasionado que está ansioso por crear sitios web limpios y fáciles de usar que ofrezcan grandes experiencias. Experto en React, JavaScript y diseño responsivo, con un fuerte enfoque en la accesibilidad y el rendimiento. Siempre aprendiendo, proactivo y dispuesto a contribuir a proyectos innovadores y crecer dentro de un equipo dinámico.">
+          I am a passionate Junior Web Developer eager to create clean, user-friendly websites that deliver great experiences. Skilled in React, JavaScript, and responsive design, with a strong focus on accessibility and performance. Always learning, proactive, and ready to contribute to innovative projects and grow within a dynamic team.
+        </p>
+        <div class="about-card textContainer">
+          <a href="#projects" class="inline-link" id="see-projects" data-en="See my projects" data-es="Ver mis proyectos">Ver mis proyectos<i class="fas fa-arrow-right"></i></a>
+        </div>
       </div>
-      <div class="container-img-perfil">
-        <img src="../IMG/perfil.jpg" alt="">
+
+      <!-- Card: Education -->
+      <div class="about-card">
+        <h3 id="about-title" data-en="Education" data-es="Educacion">🎓 Education</h3>
+        <ul>
+          <li id="education-1" data-en="University National the Comahue (UNCO) Argentina Neuquen" data-es="Universidad Nacional del Comahue (UNCO) Argentina Neuquen">
+            <strong>University National the Comahue (UNCO) Argentina Neuquen</strong>
+          </li>
+          <li id="education-2" data-en="High School Diploma with a specialization in Accounting Instituto de Formación Docente N.º 12, Argentina" data-es="Bachillerato con especialización en Contabilidad Instituto de Formación Docente N.o 12, Argentina">
+            <strong>High School Diploma with a specialization in Accounting Instituto de Formación Docente N.º 12, Argentina</strong>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Card: Work Experience -->
+      <div class="about-card experiencia">
+        <h3 id="experience-title" data-en="💼 Work Experience" data-es="Experiencia Laboral">💼 Work Experience</h3>
+        <ul>
+          <li id="experience-1">
+            <strong data-en="INTA (National Institute of Agricultural Technology)" data-es="INTA (Nacional Instituto de Agricultura Tecnologíca)">
+              INTA (National Institute of Agricultural Technology)
+            </strong><br />
+            <div data-en="6 months working on a react project" data-es="6 meses trabajando en un proyecto con react">
+              6 months working on a react project
+            </div> 
+          </li>
+        </ul>
+      </div>
+
+      <!-- Card: Skills -->
+      <div class="about-card">
+        <h3 id="skills-title" data-en="Skills" data-es="Habilidades">🛠 Skills</h3>
+        <div class="tech-icons">
+          <h4>Backend</h4>
+          <span title="PHP"><i class="fab fa-php"></i> PHP</span> &nbsp;&nbsp;
+          <span title="SQL"><i class="fas fa-database"></i> SQL</span> &nbsp;&nbsp;
+          <span title="Laravel">
+            <img src="https://laravel.com/img/logomark.min.svg" alt="Laravel" style="height:1.2em;vertical-align:middle;">
+            Laravel
+          </span>          
+        </div>
+
+        <div class="tech-icons">
+          <h4>Frontend</h4>
+          <span title="HTML5"><i class="fab fa-html5"></i> HTML5</span> &nbsp;&nbsp;
+          <span title="CSS3"><i class="fab fa-css3-alt"></i> CSS3</span> &nbsp;&nbsp;
+          <span title="JavaScript"><i class="fab fa-js-square"></i> JavaScript</span> &nbsp;&nbsp;
+          <span title="Bootstrap"><i class="fab fa-bootstrap"></i> Bootstrap</span> &nbsp;&nbsp;
+          <span title="React"><i class="fab fa-react"></i> React</span> &nbsp;&nbsp;
+          <span title="Tailwind"><i class="fas fa-water"></i> Tailwind</span> &nbsp;&nbsp;
+          <span title="Sass"><i class="fab fa-sass"></i> Sass</span>
+        </div>
+
       </div>
     </div>
-  </main>
+  </div>
+</section>
 
-  <section id="about" class="about-section">
-    <div class="about-container">
-      <h2 class="section-title">&lt;/ About Me &gt;</h2>
+<section class="projects" id="projects">
+  <div class="container">
+    <h2 class="section-title">&lt;/ <span id="projects-section-title" data-en="My Projects" data-es="Mis Proyectos">My Projects</span> &gt;</h2>
 
-      <div class="about-content">
-        <!-- Card: Info -->
-        <div class="about-card">
-          <h3>👨‍💻 <span class="highlight">Diego Ríos</span></h3>
-          <p>
-            I am a passionate Junior Web Developer eager to create clean, user-friendly websites that deliver great experiences. Skilled in React, JavaScript, and responsive design, with a strong focus on accessibility and performance. Always learning, proactive, and ready to contribute to innovative projects and grow within a dynamic team.
+    <div class="project-grid">
+
+      <div class="project zapatillas" data-link="https://github.com/Diiegorios46/TP-Final-TiendaZapatillas-Prog.Dinamica">
+        <img src="../IMG/zapatillas.web.png" alt="Ecommerce Project" />
+        <div class="project-content">
+          <h3 data-en="E-commerce sneakers" data-es="Tienda de Zapatillas web">E-commerce sneakers</h3>
+          <p class="project-description" id="project-desc-1" data-en="Website selling sneakers with responsive design, dynamic catalog and basic shopping functionalities." data-es="Sitio web de venta de zapatillas con diseño responsive, catálogo dinámico y funcionalidades básicas de compra.">
+            Website selling sneakers with responsive design, dynamic catalog and basic shopping functionalities.
           </p>
-          <a href="#projects" class="inline-link">See my projects <i class="fas fa-arrow-right"></i></a>
-        </div>
-
-        <!-- Card: Education -->
-        <div class="about-card">
-          <h3>🎓 Education</h3>
-          <ul>
-            <li>
-              <strong>Universidad Nacional del Comahue (UNCo)</strong><br />
-              Associate Degree in Web Development (or UX/UI Design)
-            </li>
-          </ul>
-        </div>
-
-        <!-- Card: Work Experience -->
-        <div class="about-card experiencia">
-          <h3>💼 Work Experience</h3>
-          <ul>
-            <li>
-              <strong>INTA (Instituto Nacional de Tecnología Agropecuaria)</strong><br />
-              6 months working on a react project 
-            </li>
-          </ul>
-        </div>
-
-        <!-- Card: Skills -->
-        <div class="about-card">
-          <h3>🛠 Skills</h3>
           <div class="tech-icons">
-            <h4>Backend</h4>
-            <span title="PHP"><i class="fab fa-php"></i> PHP</span> &nbsp;&nbsp;
-            <span title="SQL"><i class="fas fa-database"></i> SQL</span> &nbsp;&nbsp;
-            <span title="Laravel">
-              <img src="https://laravel.com/img/logomark.min.svg" alt="Laravel" style="height:1.2em;vertical-align:middle;">
-              Laravel
-            </span>          
-          </div>
-                    
-          <div class="tech-icons">
-            <h4>Frontend</h4>
-            <span title="HTML5"><i class="fab fa-html5"></i> HTML5</span> &nbsp;&nbsp;
-            <span title="CSS3"><i class="fab fa-css3-alt"></i> CSS3</span> &nbsp;&nbsp;
-            <span title="JavaScript"><i class="fab fa-js-square"></i> JavaScript</span> &nbsp;&nbsp;
-            <span title="Bootstrap"><i class="fab fa-bootstrap"></i> Bootstrap</span> &nbsp;&nbsp;
-            <span title="React"><i class="fab fa-react"></i> React</span> &nbsp;&nbsp;
-            <span title="Tailwind"><i class="fas fa-water"></i> Tailwind</span> &nbsp;&nbsp;
-            <span title="Sass"><i class="fab fa-sass"></i> Sass</span>
-
-          </div>
-
+            <i class="fab fa-php" title="PHP"></i>
+            <i class="fab fa-html5" title="HTML5"></i>
+            <i class="fab fa-css3-alt" title="CSS3"></i>
+            <i class="fab fa-js-square" title="JavaScript"></i>
+            <i class="fab fa-bootstrap" title="Bootstrap"></i>
+            <i class="fas fa-database" title="SQL"></i>
           </div>
         </div>
       </div>
-    </div>
-  </section>
 
-  <section class="projects" id="projects">
-    <div class="container">
-      <h2 class="section-title">&lt;/ My Projects &gt;</h2>
-
-      <div class="project-grid">
-
-        <div class="project zapatillas" data-link="https://github.com/Diiegorios46/TP-Final-TiendaZapatillas-Prog.Dinamica">
-          <img src="../IMG/zapatillas.web.png" alt="Ecommerce Project" />
-          <div class="project-content">
-            <h3>E-commerce sneakers</h3>
-            <p class="project-description">Sitio de venta de zapatillas con diseño responsive, catálogo dinámico y funcionalidades básicas de compra.</p>
-            <div class="tech-icons">
-              <i class="fab fa-php" title="PHP"></i>
-              <i class="fab fa-html5" title="HTML5"></i>
-              <i class="fab fa-css3-alt" title="CSS3"></i>
-              <i class="fab fa-js-square" title="JavaScript"></i>
-              <i class="fab fa-bootstrap" title="Bootstrap"></i>
-              <i class="fas fa-database" title="SQL"></i>
-            </div>
+      <div class="project" data-link="https://react-movie-series-pwa-woad.vercel.app/">
+        <img src="../IMG/movies.png" alt="ReelVices Project" />
+        <div class="project-content">
+          <h3 data-en="film manager" data-es="Administracion de Peliculas">film manager</h3>
+          <p class="project-description" id="project-desc-2" data-en="Progressive web application (PWA) developed with React to explore movies and series in a dynamic, interactive and fully responsive way." data-es="Aplicación web progresiva (PWA) desarrollada con React para explorar películas y series de forma dinámica, interactiva y completamente responsive.">
+            Progressive web application (PWA) developed with React to explore movies and series in a dynamic, interactive and fully responsive way.
+          </p>
+          <div class="tech-icons">
+            <i class="fab fa-php" title="PHP"></i>
+            <i class="fab fa-html5" title="HTML5"></i>
+            <i class="fab fa-css3-alt" title="CSS3"></i>
+            <i class="fab fa-js-square" title="JavaScript"></i>
+            <i title="React" class="fab fa-react"></i> 
           </div>
         </div>
+      </div>
 
-        <div class="project" data-link="https://react-movie-series-pwa-woad.vercel.app/">
-          <img src="../IMG/movies.png" alt="ReelVices Project" />
-          <div class="project-content">
-            <h3>film manager</h3>
-            <p class="project-description">
-              Progressive web application (PWA) developed with React to explore movies and series in a dynamic, interactive and fully responsive way.
-            </p>
-            <div class="tech-icons">
-              <i class="fab fa-php" title="PHP"></i>
-              <i class="fab fa-html5" title="HTML5"></i>
-              <i class="fab fa-css3-alt" title="CSS3"></i>
-              <i class="fab fa-js-square" title="JavaScript"></i>
-              <i title="React" class="fab fa-react"></i> 
-            </div>
+      <div class="project" data-link="https://github.com/Diiegorios46/TP-Final-TiendaCoffee-Prog.Estatica">
+        <img src="../IMG/coffe.png" alt="Coffee Project" />
+        <div class="project-content">
+          <h3 data-en="Coffee Shop" data-es="Tienda de Cafe web">Coffee Shop</h3>
+          <p class="project-description" id="project-desc-3" data-en="Modern static website for a coffee shop, with interactive menu and map location." data-es="Sitio web estático moderno para una cafetería, con menú interactivo y ubicación en el mapa.">
+            Modern static website for a coffee shop, with interactive menu and map location.
+          </p>
+          <div class="tech-icons">
+            <i class="fab fa-html5" title="HTML5"></i>
+            <i class="fab fa-css3-alt" title="CSS3"></i>
+            <i class="fab fa-js-square" title="JavaScript"></i>
           </div>
         </div>
+      </div>
 
-        <div class="project" data-link="https://github.com/Diiegorios46/TP-Final-TiendaCoffee-Prog.Estatica">
-          <img src="../IMG/coffe.png" alt="Coffee Project" />
-          <div class="project-content">
-            <h3>Coffee Shop</h3>
-            <p class="project-description">Página estática moderna para una cafetería, con menú interactivo y ubicación en mapa.</p>
-            <div class="tech-icons">
-              <i class="fab fa-html5" title="HTML5"></i>
-              <i class="fab fa-css3-alt" title="CSS3"></i>
-              <i class="fab fa-js-square" title="JavaScript"></i>
-            </div>
+      <div class="project peluqueria" data-link="https://landing-page-peluqueria-sass.vercel.app/">
+        <img src="../IMG/peluqueria.png" alt="Hairdresser Project" />
+        <div class="project-content">
+          <h3 data-en="hairdressing salon" data-es="Pagina de Peluquería">hairdressing salon</h3>
+          <p class="project-description" id="project-desc-4" data-en="Modern hairdressing landing page with job gallery and contact form." data-es="Landing page moderna de peluquería con galería de trabajos y formulario de contacto.">
+            Modern hairdressing landing page with job gallery and contact form.
+          </p>
+          <div class="tech-icons">
+            <i class="fab fa-html5" title="HTML5"></i>
+            <i class="fab fa-css3-alt" title="CSS3"></i>
+            <i class="fab fa-sass" title="Sass"></i>
           </div>
         </div>
+      </div>
 
-        <div class="project peluqueria" data-link="https://landing-page-peluqueria-sass.vercel.app/">
-          <img src="../IMG/peluqueria.png" alt="Hairdresser Project" />
-          <div class="project-content">
-            <h3>hairdressing salon</h3>
-            <p class="project-description">Landing page moderna para peluquería con galería de trabajos y formulario de contacto.</p>
-            <div class="tech-icons">
-              <i class="fab fa-html5" title="HTML5"></i>
-              <i class="fab fa-css3-alt" title="CSS3"></i>
-              <i class="fab fa-sass" title="Sass"></i>
-            </div>
-          </div>
-        </div>
-
-      </div> 
     </div> 
-  </section>
+  </div> 
+</section>
 
-
-
-  <footer>
-    <div class="container">
-      <div class="social-icons">
-        <a href="https://linkedin.com/in/diego-rios-8112a9264/" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin"></i></a>
-        <a href="https://github.com/Diiegorios46" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i></a>
-      </div>
-      <nav class="footer-nav">
-        <a href="#home">Home</a>
-        <a href="#projects">Projects</a>
-        <a href="#about">About</a>
-      </nav>
-      <p>© Diego Ríos – 2025</p>
+<footer>
+  <div class="container">
+    <div class="social-icons">
+      <a href="https://linkedin.com/in/diego-rios-8112a9264/" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin"></i></a>
+      <a href="https://github.com/Diiegorios46" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i></a>
     </div>
-  </footer>
-
-    <script>
-
-      document.addEventListener("DOMContentLoaded", () => {
-        const hamburger = document.getElementById('hamburger');
-        const navLinks = document.getElementById('nav-links');
-
-        hamburger.addEventListener('click', () => {
-          hamburger.classList.toggle('active');
-          navLinks.classList.toggle('active');
-        });
-
-        document.querySelectorAll('.nav-links a').forEach(link => {
-          link.addEventListener('click', () => {
-            if (window.innerWidth <= 768) {
-              hamburger.classList.remove('active');
-              navLinks.classList.remove('active');
-            }
-          });
-        });
-
-        document.querySelectorAll('.project').forEach(div => {
-          div.addEventListener('click', () => {
-            const url = div.getAttribute('data-link');
-            window.open(url, '_blank');
-          });
-        });
-
-        const moonIcon = document.querySelector('.fa-moon');
-        moonIcon.addEventListener('click', () => {
-          document.body.classList.toggle('dark-mode');
-        });
-
-      });
-
-
-
-
-  </script>
-
-
+    <nav class="footer-nav">
+      <a href="#home" data-en="Home" data-es="Inicio">Home</a>
+      <a href="#projects" data-en="Projects" data-es="Projectos">Projects</a>
+      <a href="#about" data-en="About me" data-es="Sobre mi">About</a>
+    </nav>
+    <p>© Diego Ríos – 2025</p>
+  </div>
+</footer>
 
 </body>
 </html>

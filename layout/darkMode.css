@@ -1,108 +1,95 @@
-
 /* 🌤️ Modo "oscuro" visualmente claro y moderno */
 body.dark-mode {
-  background: #ffffff; /* Fondo blanco limpio */
-  color: #000000;       /* Texto principal en negro */
+  background: #ffffff;
+  color: #000000;
 }
 
 /* Secciones principales */
 body.dark-mode .about-section,
-body.dark-mode .projects {
-  background: transparent; 
-  color: #000000;
-}
-
-
-body.dark-mode footer{
-  background: transparent; 
-  background:#7952b3;
-}
-
-body.dark-mode .about-section{
-  background:#7952b3;
-}
-
-body.dark-mode .overlay{
-  background-color:initial;
-}
-
-/* Títulos de sección */
+body.dark-mode .projects,
 body.dark-mode .section-title {
+  background: transparent;
   color: #000000;
 }
 
-/* Navbar con fondo blanco + sombra sutil */
+/* Sección About con fondo personalizado */
+body.dark-mode .about-section {
+  background: #7952b3;
+}
+
+/* Overlay sin color en modo oscuro */
+body.dark-mode .overlay {
+  background-color: initial;
+}
+
+/* Navbar en modo oscuro */
 body.dark-mode .navbar {
-  background-color:#7952b3;
+  background-color: #7952b3;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
-/* Footer links */
-body.dark-mode .footer-nav > a , .container > p{
+/* Footer con fondo morado y color blanco en íconos/textos */
+body.dark-mode footer {
+  background: #7952b3;
+}
+
+/* Links del footer y textos en contenedores */
+body.dark-mode .footer-nav > a,
+body.dark-mode .container > p {
   color: #000000;
 }
 
-/* Tarjetas con efecto glassmorphism */
+/* Tarjetas estilo glassmorphism */
 body.dark-mode .project,
 body.dark-mode .about-card {
-  background: rgba(255, 255, 255, 0.4); /* más visible en fondo blanco */
+  background: rgba(255, 255, 255, 0.4);
   border: 1px solid rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(8px);
   border-radius: 12px;
   padding: 1rem;
   box-shadow: 0 2px 12px rgba(0, 0, 0, 0.1);
-  color: #000000;
 }
 
-/* Asegurar color en títulos de tarjetas */
-
-body.dark-mode .hamburger{
-  background-color: #7952b3;
-}
-
-body.dark-mode .about-card{
+/* Textos de tarjetas */
+body.dark-mode .about-card {
   color: #ffffff;
 }
-
-body.dark-mode .about-card > p{
+body.dark-mode .about-card > p {
   color: #ffffff;
 }
-
 
 /* Links, íconos y sociales */
 body.dark-mode .nav-links a,
 body.dark-mode .icons i,
-body.dark-mode .social-icons a {
-  color: #ffffff; /* Morado Bootstrap */
+body.dark-mode .social-icons a,
+body.dark-mode .fa-linkedin {
+  color: #ffffff;
   transition: color 0.3s ease;
 }
 
-/* Hover brillante */
+/* Hover en modo oscuro */
 body.dark-mode .nav-links a:hover,
 body.dark-mode .social-icons a:hover {
-  color:#563b7e; /* Azul vivo */
+  color: #563b7e;
 }
 
-body.dark-mode .fa-linkedin{
-  color: #ffffff;
+/* Botón hamburguesa */
+body.dark-mode .hamburger {
+  background-color: #7952b3;
 }
 
+/* Responsive: menú hamburguesa en modo oscuro */
 @media (max-width: 768px) {
-    body.dark-mode #nav-links{
-    background-color: #7952b3; /* Morado Bootstrap */
-    }
-    body.dark-mode #nav-links{
-    background-color: #7952b3; /* Morado Bootstrap */
-    }
+  body.dark-mode #nav-links {
+    background-color: #7952b3;
+  }
 
-    body.dark-mode #nav-links > li > a{
-    color: #ffffff; /* Morado Bootstrap */
-    }
+  body.dark-mode #nav-links > li > a {
+    color: #ffffff;
+  }
 }
 
-
-
-/* Animación base para entradas */
+/* 🎬 Animación base para entradas */
 @keyframes fadeSlideUp {
   0% {
     opacity: 0;
@@ -114,7 +101,7 @@ body.dark-mode .fa-linkedin{
   }
 }
 
-/* Aplica animación a las tarjetas de About */
+/* Aplicar animación a tarjetas About */
 .about-card {
   opacity: 0;
   animation: fadeSlideUp 0.6s ease forwards;

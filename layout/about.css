@@ -51,6 +51,11 @@
   /* color y background se mantienen según el modo */
 }
 
+.about-card .textContainer{
+  padding: 15px;
+}
+
+
 .about-card p,
 .about-card li {
   font-size: 16px;

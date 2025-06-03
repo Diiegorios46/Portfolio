@@ -1,26 +1,34 @@
-/* Barra de Navegación */
-
+/* Barra de Navegación Principal */
 .navbar {
-  background-color: rgb(2, 4, 3);
+  background-color: black;
   padding: 24px 40px;
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  position: relative;
+  font-family: 'Inter', sans-serif;
 }
 
+.nav-links,
 .navbar ul {
-  list-style: none;
   display: flex;
+  list-style: none;
   gap: 30px;
 }
 
+.nav-links li a,
 .navbar ul li a {
   color: white;
   text-decoration: none;
-  font-weight: 500;
-  transition: color 0.3s;
   font-weight: bold;
+  transition: color 0.3s;
 }
 
+.nav-links li a:hover {
+  color: blueviolet;
+}
+
+/* Íconos generales */
 .icons i {
   color: white;
   font-size: 1.3rem;
@@ -28,18 +36,7 @@
   cursor: pointer;
 }
 
-.nav-links {
-  display: flex;
-  list-style: none;
-  gap: 30px;
-}
-
-.nav-links li a:hover {
-  color: blueviolet;
-}
-
-
-/* Estilos para el menú hamburguesa */
+/* Menú Hamburguesa */
 .hamburger {
   display: none;
   cursor: pointer;
@@ -56,12 +53,32 @@
   transition: all 0.3s ease;
 }
 
-/* Estilos para el menú en móvil */
+/* Menú Hamburguesa activo */
+.hamburger.active span:nth-child(1) {
+  transform: translateY(8px) rotate(45deg);
+}
+.hamburger.active span:nth-child(2) {
+  opacity: 0;
+}
+.hamburger.active span:nth-child(3) {
+  transform: translateY(-8px) rotate(-45deg);
+}
+
+.mobile-social {
+  display: none;
+}
+
+
+/* Menú móvil */
 @media (max-width: 768px) {
   .hamburger {
     display: block;
   }
-  
+
+  .mobile-social {
+    display:none;
+  }
+
   .nav-links {
     position: fixed;
     top: 0;
@@ -76,66 +93,46 @@
     z-index: 999;
     padding-top: 60px;
   }
-  
+
   .nav-links.active {
     left: 0;
   }
-  
+
   .nav-links li {
     margin: 15px 0;
   }
-  
+
   .icons {
     margin-left: auto;
   }
-  
-  /* Animación para el icono hamburguesa cuando está activo */
-  .hamburger.active span:nth-child(1) {
-    transform: translateY(8px) rotate(45deg);
+
+  .mobile-social {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 30px;
   }
-  
-  .hamburger.active span:nth-child(2) {
-    opacity: 0;
+
+  .mobile-social a {
+    font-size: 1.5rem;
+    color: white;
   }
-  
-  .hamburger.active span:nth-child(3) {
-    transform: translateY(-8px) rotate(-45deg);
+
+  .mobile-social a:hover {
+    color: blueviolet;
+  }
+
+  .icons .fa-linkedin,
+  .icons .fa-github {
+    display: none;
   }
 }
 
-/* Oculta los íconos sociales del menú hamburguesa en escritorio */
-.mobile-social {
-  display: none;
-}
-
-/* NAVBAR Y MENÚ PRINCIPAL */
-.navbar {
-  background-color: black;
-  padding: 24px 40px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  position: relative;
-}
-
-.nav-links {
-  display: flex;
-  list-style: none;
-  gap: 30px;
-}
-
-.nav-links li a {
-  color: white;
-  text-decoration: none;
-  font-weight: 500;
-  transition: color 0.3s;
-}
-
-.tech-icons{
+/* Íconos tecnológicos */
+.tech-icons {
   font-size: 1.6rem;
   margin-bottom: 16px;
 }
-
 
 .tech-icons i {
   margin: 5px;
@@ -147,32 +144,24 @@
   transform: scale(1.2);
 }
 
-
-
-
-/* Muestra los íconos sociales solo en móvil dentro del menú */
-@media (max-width: 768px) {
-  .mobile-social {
-    display: flex;
-    gap: 20px;
-    justify-content: center;
-    margin-top: 30px;
-  }
-  .mobile-social a {
-    font-size: 1.5rem;
-    color: white;
-  }
-  .mobile-social a:hover {
-    color: blueviolet;
-  }
+/* Íconos sociales (footer o sección similar) */
+.social-icons {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
-@media (max-width: 768px) {
-  .icons .fa-linkedin  {
-    display: none;
-  }
-
-  .icons .fa-github  {
-    display: none;
-  }
+.social-icons a {
+  color: white;
+  font-size: 1.5rem;
+  margin-right: 15px;
+  transition: color 0.3s;
 }
+
+.social-icons a:hover {
+  color: #0077b5;
+}
+
+/* Oculta íconos sociales en escritorio */
+
