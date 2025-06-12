@@ -21,6 +21,7 @@
    <script src="./javascript/traductor.js"></script>
    <script src="./javascript/burger.js"></script>
    <script src="./javascript/links.js"></script>
+   <script src="./javascript/animationMoon.js"></script>
 
 </head>
 <body>
@@ -48,7 +49,11 @@
         <a href="https://www.linkedin.com/in/diego-rios-8112a9264/" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin"></i></a>
         <a href="https://github.com/Diiegorios46" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i></a>
         <i class="fas fa-language"></i>
-        <i class="fas fa-moon"></i>
+
+        <div class="toggle-container" id="toggle">
+          <i class="fa-solid fa-moon" id="moon"></i>
+        </div>
+
       </div>
     </nav>
   </header>
@@ -59,7 +64,7 @@
   <main class="hero" id="home">
   <div class="overlay">
     <div class="content">
-      <h1 id="hero-title" data-en="I am Diego Ríos" data-es="Soy Diego Rios">I am Diego Ríos <span class="braces">{}</span></h1>
+      <h1 id="hero-title" data-en="I am Diego Ríos" data-es="Soy Diego Rios">I am Diego Rios <span class="braces">{}</span></h1>
       <p id="hero-subtitle" data-en="Full Stack Developer" data-es="Desarrollador Full Stack">Full Stack Developer</p>
     </div>
     <div class="container-img-perfil">
@@ -80,9 +85,6 @@
 " data-es="Soy un desarrollador web junior apasionado que está ansioso por crear sitios web limpios y fáciles de usar que ofrezcan grandes experiencias. Experto en React, JavaScript y diseño responsivo, con un fuerte enfoque en la accesibilidad y el rendimiento. Siempre aprendiendo, proactivo y dispuesto a contribuir a proyectos innovadores y crecer dentro de un equipo dinámico.">
           I am a passionate Junior Web Developer eager to create clean, user-friendly websites that deliver great experiences. Skilled in React, JavaScript, and responsive design, with a strong focus on accessibility and performance. Always learning, proactive, and ready to contribute to innovative projects and grow within a dynamic team.
         </p>
-        <div class="about-card textContainer">
-          <a href="#projects" class="inline-link" id="see-projects" data-en="See my projects" data-es="Ver mis proyectos">Ver mis proyectos<i class="fas fa-arrow-right"></i></a>
-        </div>
       </div>
 
       <!-- Card: Education -->
@@ -232,6 +234,15 @@
     <p>© Diego Ríos – 2025</p>
   </div>
 </footer>
+
+  <script>
+
+
+
+
+
+  </script>
+
 
 </body>
 </html>

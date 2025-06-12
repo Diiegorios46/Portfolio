@@ -27,6 +27,7 @@
   border-radius: 4px;
 }
 
+
 .about-content {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -43,12 +44,11 @@
 /* Formato visual de las tarjetas como en dark mode */
 .about-card {
   margin-bottom: 24px;
-  padding: 1rem;
+  padding: 1.4rem;
   border-radius: 12px;
   box-shadow: 0 2px 12px rgba(255, 255, 255, 0.1);
   border: 1px solid rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(8px);
-  /* color y background se mantienen según el modo */
 }
 
 .about-card .textContainer{
