@@ -58,6 +58,8 @@
   align-items: center;
 }
 
+
+
 .project {
   background-color: #111;
   padding: 20px;
@@ -191,6 +193,12 @@
     font-size: 1.2rem;
     margin-right: 8px;
   }
+
+  .container-button-iconos{
+    justify-content: center;
+    flex-direction: column;
+  }
+
 }
 
 .project {
