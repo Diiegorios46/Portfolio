@@ -114,29 +114,74 @@
               </li>
             </ul>
           </div>
+        </div>
+
           <!-- Card: Skills -->
-          <div class="about-card">
+
+          <div class="about-skills">
             <h3 id="skills-title">🛠 Skills</h3>
-            <h4>Backend</h4>
+            <h4 class="text-white">Backend</h4>
+
             <div class="tech-icons">
-              <span title="PHP"><i class="fab fa-php"></i> PHP</span> &nbsp;&nbsp;
-              <span title="SQL"><i class="fas fa-database"></i> SQL</span> &nbsp;&nbsp;
-              <span title="Laravel">
-                <img src="https://laravel.com/img/logomark.min.svg" alt="Laravel logo" style="height:1.2em;vertical-align:middle;">
-                Laravel
-              </span>
+
+              <div class="container-skills">
+                <i class="fab fa-php"></i>
+                <span title="PHP"> PHP</span> 
+              </div>
+
+              <div class="container-skills">
+                <i class="fas fa-database"></i>
+                <span title="SQL"> SQL</span> 
+              </div>
+              <div  class="container-skills">
+                <span title="Laravel">
+                  <img src="https://laravel.com/img/logomark.min.svg" alt="Laravel logo" style="height:1.2em;vertical-align:middle;">
+                  Laravel
+                </span>
+
+              </div>
             </div>
-            <h4>Frontend</h4>
+
+            <h4 class="text-white">Frontend</h4>
             <div class="tech-icons">
-              <span title="HTML5"><i class="fab fa-html5"></i> HTML5</span> &nbsp;&nbsp;
-              <span title="CSS3"><i class="fab fa-css3-alt"></i> CSS3</span> &nbsp;&nbsp;
-              <span title="JavaScript"><i class="fab fa-js-square"></i> JavaScript</span> &nbsp;&nbsp;
-              <span title="Bootstrap"><i class="fab fa-bootstrap"></i> Bootstrap</span> &nbsp;&nbsp;
-              <span title="React"><i class="fab fa-react"></i> React</span> &nbsp;&nbsp;
-              <span title="Tailwind"><i class="fas fa-water"></i> Tailwind</span> &nbsp;&nbsp;
-              <span title="Sass"><i class="fab fa-sass"></i> Sass</span>
+              <div class="container-skills">
+                <i class="fab fa-html5"></i>
+                <span title="HTML5"> HTML5</span>
+              </div>
+
+              <div class="container-skills">
+                <i class="fab fa-css3-alt"></i>
+                <span title="CSS3"> CSS3</span> 
+              </div>
+
+              <div class="container-skills">
+                <i class="fab fa-js-square"></i>
+                <span title="JavaScript"> JavaScript</span> 
+              </div>
+
+              <div class="container-skills">
+                <i class="fab fa-bootstrap"></i>
+                <span title="Bootstrap"> Bootstrap</span> 
+              </div>
+
+              <div class="container-skills">
+                <i class="fab fa-react"></i>
+                <span title="React"> React</span> 
+              </div>
+
+              <div class="container-skills">
+                <i class="fas fa-water"></i> 
+                <span title="Tailwind">Tailwind</span> 
+              </div>
+
+              <div class="container-skills">
+                <i class="fab fa-sass"></i>
+                <span title="Sass"> Sass</span>
+              </div>
+
             </div>
           </div>
+          
         </div>
       </div>
     </section>
@@ -144,60 +189,81 @@
     <section class="projects" id="projects" aria-labelledby="projects-section-title">
       <div class="container">
         <h2 class="section-title">&lt;/ <span id="projects-section-title">My Projects</span> &gt;</h2>
+
         <div class="project-grid">
-          <div class="project zapatillas" data-link="https://github.com/Diiegorios46/TP-Final-TiendaZapatillas-Prog.Dinamica" tabindex="0" role="button" aria-label="Open E-commerce sneakers project">
-            <img src="../IMG/zapatillas.web.png" alt="Screenshot of E-commerce sneakers project" />
+
+          <!-- Proyecto Zapatillas -->
+          <div class="project zapatillas" tabindex="0" role="button" aria-label="Open E-commerce sneakers project">
+            <img src="../IMG/zapatillas.web.png" data-link="https://github.com/Diiegorios46/TP-Final-TiendaZapatillas-Prog.Dinamica" alt="Screenshot of E-commerce sneakers project" class="img-link" />
             <div class="project-content">
               <h3 id="project-title-1">E-commerce sneakers</h3>
               <p class="project-description" id="project-desc-1">
                 Website selling sneakers with responsive design, dynamic catalog and basic shopping functionalities.
               </p>
-              <div class="tech-icons" aria-label="Technologies used">
-                <i class="fab fa-php" title="PHP"></i>
-                <i class="fab fa-html5" title="HTML5"></i>
-                <i class="fab fa-css3-alt" title="CSS3"></i>
-                <i class="fab fa-js-square" title="JavaScript"></i>
-                <i class="fab fa-bootstrap" title="Bootstrap"></i>
-                <i class="fas fa-database" title="SQL"></i>
+              <div class="container-button-iconos">
+                <div class="tech-icons" aria-label="Technologies used">
+                  <i class="fab fa-php" title="PHP"></i>
+                  <i class="fab fa-html5" title="HTML5"></i>
+                  <i class="fab fa-css3-alt" title="CSS3"></i>
+                  <i class="fab fa-js-square" title="JavaScript"></i>
+                  <i class="fab fa-bootstrap" title="Bootstrap"></i>
+                  <i class="fas fa-database" title="SQL"></i>
+                </div>
+                <div class="repo-button-container">
+                  <button class="repo-button">Ver Repositorio</button>
+                </div>
               </div>
             </div>
           </div>
 
-          <div class="project peluqueria" data-link="https://inta-calculadora.vercel.app/" tabindex="0" role="button" aria-label="Open hairdressing salon project">
-            <img src="../IMG/inta.png" alt="Screenshot of inta project" />
+          <!-- Proyecto INTA -->
+          <div class="project peluqueria"  tabindex="0" role="button" aria-label="Open hairdressing salon project">
+            <img src="../IMG/inta.png" alt="Screenshot of inta project" class="img-link" data-link="https://inta-calculadora.vercel.app/" />
             <div class="project-content">
-              <h3 id="project-title-4">INTA Proyect calculator</h3>
+              <h3 id="project-title-4">INTA Project Calculator</h3>
               <p class="project-description" id="project-desc-4">
-                Modern web 
+                Modern web
               </p>
-              <div class="tech-icons" aria-label="Technologies used">
-                <i class="fab fa-html5" title="HTML5"></i>
-                <i class="fab fa-css3-alt" title="CSS3"></i>
-                <i class="fab fa-react" title="react"></i>
-                <i class="fas fa-water" title="tailwind"></i>
+              <div class="container-button-iconos">
+                <div class="tech-icons" aria-label="Technologies used">
+                  <i class="fab fa-html5" title="HTML5"></i>
+                  <i class="fab fa-css3-alt" title="CSS3"></i>
+                  <i class="fab fa-react" title="React"></i>
+                  <i class="fas fa-water" title="Tailwind"></i>
+                </div>
+                <div class="repo-button-container">
+                  <button class="repo-button">Ver Repositorio</button>
+                </div>
               </div>
             </div>
           </div>
 
-          <div class="project" data-link="https://github.com/Diiegorios46/TP-Final-TiendaCoffee-Prog.Estatica" tabindex="0" role="button" aria-label="Open Coffee Shop project">
-            <img src="../IMG/coffe.png" alt="Screenshot of Coffee Shop project" />
+          <!-- Proyecto Coffee Shop -->
+          <div class="project"  tabindex="0" role="button" aria-label="Open Coffee Shop project">
+            <img src="../IMG/coffe.png" alt="Screenshot of Coffee Shop project" class="img-link" data-link="https://github.com/Diiegorios46/TP-Final-TiendaCoffee-Prog.Estatica" />
             <div class="project-content">
               <h3 id="project-title-3">Coffee Shop</h3>
               <p class="project-description" id="project-desc-3">
                 Modern static website for a coffee shop, with interactive menu and map location.
               </p>
-              <div class="tech-icons" aria-label="Technologies used">
-                <i class="fab fa-html5" title="HTML5"></i>
-                <i class="fab fa-css3-alt" title="CSS3"></i>
-                <i class="fab fa-js-square" title="JavaScript"></i>
+              <div class="container-button-iconos">
+                <div class="tech-icons" aria-label="Technologies used">
+                  <i class="fab fa-html5" title="HTML5"></i>
+                  <i class="fab fa-css3-alt" title="CSS3"></i>
+                  <i class="fab fa-js-square" title="JavaScript"></i>
+                </div>
+                <div class="repo-button-container">
+                  <button class="repo-button">Ver Repositorio</button>
+                </div>
               </div>
             </div>
           </div>
 
-
         </div>
       </div>
     </section>
+
+
   </main>
 
   <footer>

@@ -27,7 +27,6 @@
   border-radius: 4px;
 }
 
-
 .about-content {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -77,9 +76,54 @@
 }
 
 .about-card.experiencia,
-.about-card:last-child {
+.about-skills{
   grid-column: span 2;
 }
+
+.text-white{
+  padding: 1rem;
+}
+
+.container-skills {
+  width: 135px;
+  padding: .5rem;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+  transition: transform 0.2s ease;
+  border: 1px solid #333;
+}
+
+#skills-title{
+  text-align: center;
+  margin-top: 60px;
+  font-size: 2rem;
+}
+
+
+.container-skills:hover {
+  transform: scale(1.05);
+}
+
+.container-skills > i {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 0.5rem;
+  font-size: 2.5rem;
+}
+
+.container-skills h3 {
+  color: white;
+  font-size: 1rem;
+  font-weight: 600;
+  text-align: center;
+}
+
+
 
 @media (max-width: 1024px) {
   .about-section {

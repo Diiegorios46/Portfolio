@@ -25,6 +25,39 @@
   text-align: left;
 }
 
+.repo-button-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+}
+
+.repo-button {
+  background-color: #7952b3;
+  color: white;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.repo-button:hover {
+  background-color: #54397d;
+  transform: scale(1.05);
+}
+
+
+.container-button-iconos{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
 .project {
   background-color: #111;
   padding: 20px;
