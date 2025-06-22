@@ -40,7 +40,6 @@ const translations = {
     "education-1" : "Universidad Nacional del Comahue (UNCO) Argentina Neuquen",
     "education-2" : "High School Diploma with a specialization in Accounting Instituto de Formación Docente N.º 12, Argentina",
     "inta-text" : "INTA (National Institute of Agricultural Technology)",
-    "inta-2-text" : "6 months working on a react project" ,
     "skills-title": "Skills",
     "projects-section-title": "My Projects"
   },
@@ -56,7 +55,6 @@ const translations = {
     "education-1" : "University National the Comahue (UNCO) Argentina Neuquen",
     "education-2" : "Bachillerato con especialización en Contabilidad Instituto de Formación Docente N.o 12, Argentina",
     "inta-text" : "INTA (Nacional Instituto de Agricultura Tecnologíca)",
-    "inta-2-text" : "6 meses trabajando en un proyecto con react" ,
     "skills-title": "Habilidades",
     "projects-section-title": "Mis Proyectos"
   }

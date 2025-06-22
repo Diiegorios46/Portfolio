@@ -73,7 +73,7 @@ body, html {
 /* Teléfonos muy pequeños */
 @media (max-width: 400px) {
   #projects {
-    padding: 60px 30px !important;
+    padding: 60px 12px !important;
   }
 
   .overlay {
