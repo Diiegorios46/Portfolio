@@ -22,6 +22,12 @@
    <script src="./javascript/burger.js"></script>
    <script src="./javascript/links.js"></script>
    <script src="./javascript/animationMoon.js"></script>
+   <script src="./javascript/idioma.js"></script>
+
+   <!-- font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 
 </head>
 <body>
@@ -35,9 +41,9 @@
       </div>
       
       <ul class="nav-links" id="nav-links">
-        <li><a href="#home" data-en="Home" data-es="Inicio">Home</a></li>
-        <li><a href="#projects" data-en="Projects" data-es="Proyectos">Projects</a></li>
-        <li><a href="#about" data-en="About" data-es="Sobre mí" >About</a></li>
+        <li><a href="#home"  id="nav-home">Home</a></li>
+        <li><a href="#projects"  id="nav-projects">Projects</a></li>
+        <li><a href="#about" id="nav-about" >About</a></li>
         <li class="mobile-social">
           <a href="https://www.linkedin.com/in/diego-rios-8112a9264/" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin"></i></a>
           <a href="https://github.com/Diiegorios46" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i></a>
@@ -48,7 +54,7 @@
       <div class="icons">
         <a href="https://www.linkedin.com/in/diego-rios-8112a9264/" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin"></i></a>
         <a href="https://github.com/Diiegorios46" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i></a>
-        <i class="fas fa-language"></i>
+        <i class="fas fa-language" id="lang-toggle"></i>
 
         <div class="toggle-container" id="toggle">
           <i class="fa-solid fa-moon" id="moon"></i>
@@ -61,40 +67,40 @@
 
   
 
-  <main class="hero" id="home">
-  <div class="overlay">
-    <div class="content">
-      <h1 id="hero-title" data-en="I am Diego Ríos" data-es="Soy Diego Rios">I am Diego Rios <span class="braces">{}</span></h1>
-      <p id="hero-subtitle" data-en="Full Stack Developer" data-es="Desarrollador Full Stack">Full Stack Developer</p>
+    <main class="hero" id="home">
+    <div class="overlay">
+      <div class="content">
+        <h1 id="hero-title">I am Diego Rios <span class="braces">{}</span></h1>
+        <p id="hero-subtitle" data-en="Full Stack Developer" data-es="Desarrollador Full Stack">Full Stack Developer</p>
+      </div>
+      <div class="container-img-perfil">
+        <img src="../IMG/perfil2.jpg" alt="">
+      </div>
     </div>
-    <div class="container-img-perfil">
-      <img src="../IMG/perfil.jpg" alt="">
-    </div>
-  </div>
-</main>
+  </main>
 
 <section id="about" class="about-section">
   <div class="about-container">
-    <h2 class="section-title">&lt;/ <span id="about-section-title" data-en="About Me" data-es="Sobre mi">About Me</span> &gt;</h2>
+    <h2 class="section-title">
+      &lt;/<span id="about-section-title">About Me</span> &gt;
+    </h2>
 
     <div class="about-content">
-      <!-- Card: Info -->
       <div class="about-card">
         <h3>👨‍💻 <span class="highlight">Diego Ríos</span></h3>
-        <p id="about-description" data-en="I am a passionate Junior Web Developer eager to create clean, user-friendly websites that deliver great experiences. Skilled in React, JavaScript, and responsive design, with a strong focus on accessibility and performance. Always learning, proactive, and ready to contribute to innovative projects and grow within a dynamic team.
-" data-es="Soy un desarrollador web junior apasionado que está ansioso por crear sitios web limpios y fáciles de usar que ofrezcan grandes experiencias. Experto en React, JavaScript y diseño responsivo, con un fuerte enfoque en la accesibilidad y el rendimiento. Siempre aprendiendo, proactivo y dispuesto a contribuir a proyectos innovadores y crecer dentro de un equipo dinámico.">
+        <p id="about-description">
           I am a passionate Junior Web Developer eager to create clean, user-friendly websites that deliver great experiences. Skilled in React, JavaScript, and responsive design, with a strong focus on accessibility and performance. Always learning, proactive, and ready to contribute to innovative projects and grow within a dynamic team.
         </p>
       </div>
 
       <!-- Card: Education -->
       <div class="about-card">
-        <h3 id="about-title" data-en="Education" data-es="Educacion">🎓 Education</h3>
+        <h3 id="about-title">🎓 Education</h3>
         <ul>
-          <li id="education-1" data-en="University National the Comahue (UNCO) Argentina Neuquen" data-es="Universidad Nacional del Comahue (UNCO) Argentina Neuquen">
+          <li id="education-1" >
             <strong>University National the Comahue (UNCO) Argentina Neuquen</strong>
           </li>
-          <li id="education-2" data-en="High School Diploma with a specialization in Accounting Instituto de Formación Docente N.º 12, Argentina" data-es="Bachillerato con especialización en Contabilidad Instituto de Formación Docente N.o 12, Argentina">
+          <li id="education-2">
             <strong>High School Diploma with a specialization in Accounting Instituto de Formación Docente N.º 12, Argentina</strong>
           </li>
         </ul>
@@ -105,10 +111,10 @@
         <h3 id="experience-title" data-en="💼 Work Experience" data-es="Experiencia Laboral">💼 Work Experience</h3>
         <ul>
           <li id="experience-1">
-            <strong data-en="INTA (National Institute of Agricultural Technology)" data-es="INTA (Nacional Instituto de Agricultura Tecnologíca)">
+            <strong id="inta-text">
               INTA (National Institute of Agricultural Technology)
             </strong><br />
-            <div data-en="6 months working on a react project" data-es="6 meses trabajando en un proyecto con react">
+            <div id="inta-2-text">
               6 months working on a react project
             </div> 
           </li>
@@ -117,7 +123,7 @@
 
       <!-- Card: Skills -->
       <div class="about-card">
-        <h3 id="skills-title" data-en="Skills" data-es="Habilidades">🛠 Skills</h3>
+        <h3 id="skills-title">🛠 Skills</h3>
         
         <h4>Backend</h4>
         <div class="tech-icons">
@@ -147,7 +153,7 @@
 
 <section class="projects" id="projects">
   <div class="container">
-    <h2 class="section-title">&lt;/ <span id="projects-section-title" data-en="My Projects" data-es="Mis Proyectos">My Projects</span> &gt;</h2>
+    <h2 class="section-title">&lt;/ <span id="projects-section-title">My Projects</span> &gt;</h2>
 
     <div class="project-grid">
 
@@ -220,28 +226,21 @@
   </div> 
 </section>
 
-<footer>
-  <div class="container">
-    <div class="social-icons">
-      <a href="https://linkedin.com/in/diego-rios-8112a9264/" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin"></i></a>
-      <a href="https://github.com/Diiegorios46" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i></a>
+  <footer>
+    <div class="container">
+      <div class="social-icons">
+        <a href="https://linkedin.com/in/diego-rios-8112a9264/" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin"></i></a>
+        <a href="https://github.com/Diiegorios46" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i></a>
+      </div>
+      <nav class="footer-nav">
+        <a href="#home" data-en="Home" data-es="Inicio">Home</a>
+        <a href="#projects" data-en="Projects" data-es="Projectos">Projects</a>
+        <a href="#about" data-en="About me" data-es="Sobre mi">About</a>
+      </nav>
+      <p>© Diego Ríos – 2025</p>
     </div>
-    <nav class="footer-nav">
-      <a href="#home" data-en="Home" data-es="Inicio">Home</a>
-      <a href="#projects" data-en="Projects" data-es="Projectos">Projects</a>
-      <a href="#about" data-en="About me" data-es="Sobre mi">About</a>
-    </nav>
-    <p>© Diego Ríos – 2025</p>
-  </div>
-</footer>
+  </footer>
 
-  <script>
-
-
-
-
-
-  </script>
 
 
 </body>

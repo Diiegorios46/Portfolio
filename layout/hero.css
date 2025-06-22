@@ -37,25 +37,25 @@
 }
 
 .braces {
-  bottom: 15px;
+  bottom: 5px;
   color:#7952b3;
+  position: relative;
 }
 
 .container-img-perfil > img {
   border-radius: 50%;
+  width: 400px;
   object-fit: cover;
-  box-shadow: 0 0 20px rgba(37, 37, 37, 0.2);
-  transition: transform 0.3s ease;
 }
 
 /* Responsive para móviles */
 @media (max-width: 768px) {
   .overlay {
-    flex-direction: column;
     justify-content: center;
     align-items: center;
     padding: 20px;
     text-align: center;
+    flex-direction: column-reverse;
   }
 
   .content h1 {
@@ -67,7 +67,6 @@
   }
 
   .container-img-perfil > img {
-    width: 140px;
-    height: 140px;
+    width: 200px;
   }
 }
