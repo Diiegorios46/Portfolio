@@ -202,6 +202,10 @@
     margin-right: 8px;
   }
 
+  .tech-icons i{
+    font-size: 1rem;
+  }
+
   .container-button-iconos{
     justify-content: center;
     flex-direction: column;
