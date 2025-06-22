@@ -59,7 +59,7 @@
 #moon {
   position: absolute;
   top: 50%;
-  left: 5px; /* Posición inicial */
+  left: 2px; /* Posición inicial */
   transform: translateY(-50%);
   font-size: 1.2rem;
   color: white;
@@ -68,7 +68,7 @@
 
 /* Cuando está activo, lo empujamos a la derecha */
 .toggle-container.active #moon {
-  left: 55px;
+  left: 45px;
 }
 
 /* Menú Hamburguesa */
