@@ -50,7 +50,7 @@ const translations = {
     "hero-title" : "Soy Diego Rios",
     "hero-subtitle" : "Desarrollador Full Stack",
     "about-section-title" : "Sobre mi",
-    "about-description" : "Soy un desarrollador web junior apasionado que está ansioso por crear sitios web limpios y fáciles de usar que ofrezcan grandes experiencias. Experto en React, JavaScript y diseño responsivo, con un fuerte enfoque en la accesibilidad y el rendimiento. Siempre aprendiendo, proactivo y dispuesto a contribuir a proyectos innovadores y crecer dentro de un equipo dinámico.",
+    "about-description" : "Desarrollador Web Fullstack apasionado por crear experiencias digitales limpias y intuitivas. Con conocimientos en accesibilidad , buenas prácticas y metodologias agiles . Me destaco por mi actitud proactiva, aprendizaje constante y compromiso con proyectos innovadores. Listo para aportar valor en equipos dinámicos y colaborativos.",
     "about-title" :"🎓 Educacion",      
     "education-1" : "University National the Comahue (UNCO) Argentina Neuquen",
     "education-2" : "Bachillerato con especialización en Contabilidad Instituto de Formación Docente N.o 12, Argentina",

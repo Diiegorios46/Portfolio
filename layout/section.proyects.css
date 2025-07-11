@@ -34,7 +34,6 @@
 
 .repo-button {
   background-color: #7952b3;
-  color: white;
   border: none;
   padding: 0.75rem 1.5rem;
   border-radius: 8px;
@@ -44,6 +43,11 @@
   transition: background-color 0.3s ease, transform 0.2s ease;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
+
+.repo-button > a {
+  color: white;
+}
+
 
 .text-lg{
   font-size: large;
