@@ -61,7 +61,7 @@ body.dark-mode .about-card {
 }
 
 /* Textos de tarjetas */
-body.dark-mode .about-card , #education-1 , #education-2 , .text-white , #skills-title{
+body.dark-mode .about-card , #education-1 , #education-2 , .text-white{
   color: #ffffff;
 }
 body.dark-mode .about-card > p {

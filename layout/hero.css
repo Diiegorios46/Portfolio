@@ -1,5 +1,5 @@
 .hero {
-  background: url('../IMG/desarrollo.jpg') center/cover no-repeat;
+  background: url('../IMG/desarrollo.webp') center/cover no-repeat;
   height: 100vh;
   position: relative;
   filter: brightness(0.7) contrast(1.2);
