@@ -13,13 +13,8 @@ body.dark-mode .section-title {
 }
 
 body.dark-mode .container-skills{
-  background: #af97d1;
   color: white;
   font-weight: 600;
-}
-
-body.dark-mode .about-card:nth-child(2){
-  padding: 3rem;
 }
 
 /* Sección About con fondo personalizado */
@@ -28,8 +23,26 @@ body.dark-mode .about-section {
 }
 
 /* Overlay sin color en modo oscuro */
-body.dark-mode .overlay {
-  background-color: initial;
+
+
+body.dark-mode #skills-title{
+    background: linear-gradient(90deg, #ee6022, #a967ff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+
+body.dark-mode .gradient-text {
+    background: linear-gradient(90deg, #ee6022, #a967ff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 900;
+}
+
+
+body.dark-mode .text-presentation-2{
+  color: #ffffff;
+  margin-top: 20px;
 }
 
 /* Navbar en modo oscuro */

@@ -27,18 +27,6 @@ body, html {
 .fa-github    { color: #ffffff; }
 .fa-linkedin  { color: #0077b5; }
 
-/* Íconos del header */
-.icons i {
-  color: #e0e0e0;
-  margin: 0 10px;
-  font-size: 1.5rem;
-  transition: color 0.3s ease, transform 0.3s ease;
-}
-
-.icons i:hover {
-  transform: scale(1.2);
-  color: blueviolet;
-}
 
 /* 📱 Responsive Design */
 

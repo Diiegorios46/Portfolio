@@ -1,7 +1,7 @@
 .about-section {
   background-color: #0d0d0d;
   color: #ffffff;
-  padding: 100px 10% 100px;
+  padding: 5% 3% 5% 3%;
   font-family: 'Inter', sans-serif;
 }
 
@@ -42,7 +42,6 @@
 
 /* Formato visual de las tarjetas como en dark mode */
 .about-card {
-  margin-bottom: 24px;
   padding: 1.4rem;
   border-radius: 12px;
   box-shadow: 0 2px 12px rgba(255, 255, 255, 0.1);
@@ -75,11 +74,6 @@
   border-radius: 6px;
 }
 
-.about-card:nth-child(2){
-  grid-row: 1 / 3;
-  padding: 3rem;
-}
-
 .text-white{
   padding: 1rem;
 }
@@ -92,15 +86,18 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  box-shadow: 0 2px 12px rgba(255, 255, 255, 0.1);
-  transition: transform 0.2s ease;
 }
 
 .skills-title{
   margin-top: 60px;
   font-size: 2rem;
+  display: flex;
+  justify-content: center;
 }
 
+.text-presentation-2{
+  margin-top: 20px;
+}
 
 .container-skills:hover {
   transform: scale(1.05);
@@ -209,6 +206,7 @@
   .about-card li {
     font-size: 14px;
     line-height: 1.6;
+    color : #ffffff
   }
 
   

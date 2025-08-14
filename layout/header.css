@@ -34,41 +34,34 @@
 .icons{
   display: flex;
   align-items: center;
-  gap: 20px;
 }
 
-.icons i {
-  color: white;
-  font-size: 1.3rem;
-  margin-left: 20px;
-  cursor: pointer;
+/* Íconos del header */
+.icons{
+  color: #e0e0e0;
+  margin: 0 10px;
+  font-size: 1.5rem;
+  transition: color 0.3s ease, transform 0.3s ease;
 }
+
+.icons i:hover {
+  transform: scale(1.2);
+  color: blueviolet;
+}
+
 
 /* Contenedor con fondo y bordes redondeados */
 .toggle-container {
-  width: 100px;
+  width: 40px;
   height: 40px;
   background-color: #1a1a1a;
-  border-radius: 20px;
+  border-radius: 50%;
   position: relative;
   padding: 5px;
   cursor: pointer;
-}
-
-/* Ícono luna posicionado absolutamente */
-#moon {
-  position: absolute;
-  top: 50%;
-  left: 2px; /* Posición inicial */
-  transform: translateY(-50%);
-  font-size: 1.2rem;
-  color: white;
-  transition: left 0.4s ease-in-out;
-}
-
-/* Cuando está activo, lo empujamos a la derecha */
-.toggle-container.active #moon {
-  left: 45px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 /* Menú Hamburguesa */
