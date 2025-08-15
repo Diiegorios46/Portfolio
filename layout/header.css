@@ -45,6 +45,13 @@
   color: blueviolet;
 }
 
+.desactived{
+  display: none;
+}
+
+.active{
+  display: inline;
+}
 
 /* Contenedor con fondo y bordes redondeados */
 .toggle-container {

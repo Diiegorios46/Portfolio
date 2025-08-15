@@ -1,31 +1,57 @@
-function changeLanguage(lang) {
-    const elements = document.querySelectorAll('[id]');
 
-    elements.forEach(el => {
+function changeLanguage(lang) {
+  const elements = document.querySelectorAll('[id]');
+  elements.forEach(el => {
     const key = el.id;
     if (translations[lang][key]) {
-    el.innerHTML = translations[lang][key];
+      el.innerHTML = translations[lang][key];
     }
-    });
+  });
 }
 
+function addActive(element) {
+  element.classList.add('active');
+  element.classList.remove('desactived');
+}
 
+function removeActive(element) {
+  element.classList.remove('active');
+  element.classList.add('desactived');
+}
 
-    let currentLang = 'en';
+let currentLang = 'es';
 
-    document.addEventListener("DOMContentLoaded", () => {
-        const langIcon = document.getElementById('lang-toggle');
-        if (langIcon) {
-            langIcon.addEventListener('click', () => {
-            currentLang = currentLang === 'en' ? 'es' : 'en';
-            changeLanguage(currentLang);
-            });
-        }
-        // Opcional: inicia en inglés
-        changeLanguage(currentLang);
+document.addEventListener("DOMContentLoaded", () => {
+  const espanish = document.getElementById('lang-toggle-es');
+  const english = document.getElementById('lang-toggle-en');
+
+  // Inicializa el estado de las clases
+  if (currentLang === 'es') {
+    addActive(espanish);
+    removeActive(english);
+  } else {
+    addActive(english);
+    removeActive(espanish);
+  }
+
+  if (espanish) {
+    espanish.addEventListener('click', () => {
+      currentLang = 'es';
+      changeLanguage(currentLang);
+      addActive(english);
+      removeActive(espanish);
     });
-
-
+  }
+  if (english) {
+    english.addEventListener('click', () => {
+      currentLang = 'en';
+      changeLanguage(currentLang);
+      removeActive(english);
+      addActive(espanish);
+    });
+  }
+  changeLanguage(currentLang);
+});
 
 const translations = {
   'en': {
